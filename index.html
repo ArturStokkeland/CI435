@@ -1,0 +1,785 @@
+<!doctype html>
+
+<html lang="en">
+    
+    <head>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Learning Journal</title>
+        <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    </head>
+
+    <body>
+
+        <div id="wrapper">
+            
+            <header>
+                
+                <h1>CI435 Learning Journal</h1>
+                
+            </header>
+            
+            <!-- navbar -->
+            
+            <nav>
+                
+                <div id="navHolderBig">
+                
+                    <p class="navLink">Learning Journal</p>
+                    <a href="tutorial.html" class="navLink notActive">Tutorial</a>
+                    <a href="contact.html" class="navLink notActive">Contact me</a>
+                    
+                </div>
+                
+                <div id="navHolderSmall" onclick="dropdownMenu()">
+                
+                    <button id="dropdownMenuButton">Menu <i class="fas fa-chevron-down"></i></button>
+                    <div id="dropdownMenuContent">
+                        <p>Learning Journal</p>
+                        <a href="tutorial.html">Tutorial</a>
+                        <a href="contact.html">Contact me</a>
+                    </div>
+                
+                </div>
+                
+                <div id="dropdownIndex" onclick="dropdownIndex()">
+                    <button id="dropdownIndexButton">Index <i class="fas fa-chevron-down"></i></button>
+                    <div id="dropdownIndexContent">
+                        <a href="#post12">Basic JavaScript</a>
+                        <a href="#post11">Neat links</a>
+                        <a href="#post10">CSS tips and tricks</a>
+                        <a href="#post9">Week 9 - Forms</a>
+                        <a href="#post8">Week 8 - Responsive layout</a>
+                        <a href="#post7">Week 7 - Responsive Images</a>
+                        <a href="#post6">Week 6 - Grid Display</a>
+                        <a href="#post5">Week 5 - Styling text</a>
+                        <a href="#post4">Week 4 - Setting up CSS</a>
+                        <a href="#post3">Week 3 - Lists and Tables</a>
+                        <a href="#post2">Week 2 - Marking up my website</a>
+                        <a href="#post1">Week 1 - Setting up the learning journal</a>
+                    </div>
+                </div>
+                
+            </nav>
+            
+            <!-- main content -->
+            
+            <article id="post12">
+            
+                <aside>
+                    <div class="datePublished">
+                        <p><img src="images/calendar.png" alt="Calendar Icon"> <time datetime="2019-01-14">Jan 14, 2019</time></p>
+                    </div>
+                    <div class="referencesInPublication">
+                        <p id="ref12" class="ref" onclick="openRef12()"><img src="images/references.png" alt="Message Icon"> 2 references</p>
+                    </div>
+                    
+                    <div id="references12" class="refBox">
+                        <div class="tHead">
+                            <p>References week 12</p>
+                            <i id="close12" onclick="closeRef12()" class="far fa-window-close"></i>
+                        </div>
+                        <div class="tBody">
+                            <a href="https://www.codecademy.com/learn" target="_blank">Codecademy</a>
+                            <a href="https://www.lynda.com/SharedPlaylist/0e10751cf05d45d0838e8d496080d85c" target="_blank">Lynda</a>
+                        </div>
+                    </div>
+                    
+                </aside>
+                
+                
+                
+                <div class="blogPost">
+                    <h3>Basic JavaScript</h3>
+                    <p>Even though it was not supposed to be done this semester, I went ahead and learnt some basic JavaScript.</p>
+                    
+                    <p>Here is a div that changes shape and colour</p>
+                    
+                    <button id="wizard">Click me to shapeshift</button>
+                    
+                    <div id="shapeshifter"></div>
+                    
+                </div>
+                
+            </article>
+            
+            <hr>
+            
+            <article id="post11">
+            
+                <aside>
+                    <div class="datePublished">
+                        <p><img src="images/calendar.png" alt="Calendar Icon"> <time datetime="2018-12-20">Dec 20, 2018</time></p>
+                    </div>
+                    <div class="referencesInPublication">
+                        <p id="ref11" class="ref" onclick="openRef11()"><img src="images/references.png" alt="Message Icon"> 3 references</p>
+                    </div>
+                    
+                    <div id="references11" class="refBox">
+                        <div class="tHead">
+                            <p>References week 11</p>
+                            <i id="close11" onclick="closeRef11()" class="far fa-window-close"></i>
+                        </div>
+                        <div class="tBody">
+                            <a href="https://caniuse.com/" target="_blank">Can I Use</a>
+                            <a href="https://github.com/" target="_blank">GitHub</a>
+                            <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>
+                        </div>
+                    </div>
+                    
+                </aside>
+                
+                
+                
+                <div class="blogPost">
+                    <h3>Neat Links</h3>
+                    <p>I have found some tools on the internet that could be very helpful for web development</p>
+                    <dl>
+                        <dt>Can I Use</dt>
+                        <dd>Can I Use cross references your HTML or CSS with browsers, and tell you if and which browsers support specific elements, and which verion they do it in.</dd>
+                        <dt>GitHub</dt>
+                        <dd>GitHub allowes you to create repositories for version control. Aside from the perks of using Git, this could also double as cloud storage.</dd>
+                        <dt>GitHub Pages</dt>
+                        <dd>GitHub Pages allows you to host your website repository from GitHub <strong>for free!</strong></dd>                    
+                    </dl>
+                    
+                </div>
+                
+            </article>
+            
+            <hr>
+            
+            <article id="post10">
+            
+                <aside>
+                    <div class="datePublished">
+                        <p><img src="images/calendar.png" alt="Calendar Icon"> <time datetime="2018-12-10">Dec 10, 2018</time></p>
+                    </div>
+                    <div class="referencesInPublication">
+                        <p id="ref10" class="ref" onclick="openRef10()"><img src="images/references.png" alt="Message Icon"> 5 references</p>
+                    </div>
+                    
+                    <div id="references10" class="refBox">
+                        <div class="tHead">
+                            <p>References week 10</p>
+                            <i id="close10" onclick="closeRef10()" class="far fa-window-close"></i>
+                        </div>
+                        <div class="tBody">
+                            <a href="https://www.pexels.com/photo/person-on-a-bridge-near-a-lake-747964/" target="_blank">Parallax photo</a>
+                            <a href="https://www.codecademy.com/learn" target="_blank">Codecademy</a>
+                            <a href="https://www.lynda.com/SharedPlaylist/0e10751cf05d45d0838e8d496080d85c" target="_blank">Lynda</a>
+                            <a href="https://validator.w3.org/" target="_blank">W3C HTML Validator</a>
+                            <a href="http://jigsaw.w3.org/css-validator/" target="_blank">W3C CSS Validator</a>
+                        </div>
+                    </div>
+                    
+                </aside>
+                
+                
+                
+                <div class="blogPost">
+                    <h3>CSS tips and tricks</h3>
+                    <p>I have learnt a few things on my own that I will put here to show:</p>
+                    
+                    <p class="pBold">Box-shadow:</p>
+                    <div id=boxShadow></div>
+                    
+                    <p class="pBold">Spinning elements</p>
+                    <button id="makeSpinBox">Hover me to spin box!</button>
+                    <div id="spinBox"></div>
+                    
+                    <p class="pBold">Parallax:</p>
+                    <div id="parallax"></div>
+                    
+                </div>
+                
+            </article>
+            
+            <hr>
+            
+            <article id="post9">
+            
+                <aside>
+                    <div class="datePublished">
+                        <p><img src="images/calendar.png" alt="Calendar Icon"> <time datetime="2018-11-29">Nov 29, 2018</time></p>
+                    </div>
+                    <div class="referencesInPublication">
+                        <p id="ref9" class="ref" onclick="openRef9()"><img src="images/references.png" alt="Message Icon"> 4 references</p>
+                    </div>
+                    
+                    <div id="references9" class="refBox">
+                        <div class="tHead">
+                            <p>References week 9</p>
+                            <i id="close9" onclick="closeRef9()" class="far fa-window-close"></i>
+                        </div>
+                        <div class="tBody">
+                            <a href="http://www.cem.brighton.ac.uk/staff/esg1/ci435/tutorial09/tutorial09.html" target="_blank">Lab Tutorial Week 9</a>
+                            <a href="https://www.w3schools.com/html/html_form_input_types.asp" target="_blank">W3Schools: Form Input Types</a>
+                            <a href="https://validator.w3.org/" target="_blank">W3C HTML Validator</a>
+                            <a href="http://jigsaw.w3.org/css-validator/" target="_blank">W3C CSS Validator</a>
+                        </div>
+                    </div>
+                    
+                </aside>
+                
+                
+                
+                <div class="blogPost">
+                    <h3>Week 9 - Forms</h3>
+                    <p>This week I learnt about forms. I have made a form on the contacts page, but nor every form element is as useful as the rest, so I will make some weird/interesting ones here:</p>
+                    
+                    <div id="funnyForm">
+                        <p class="pBold">Date Picker</p>
+                        <input type="date" />
+                        <p class="pBold">Week Selector</p>
+                        <input type="week"/>
+                        <p class="pBold">Colour Picker</p>
+                        <input type="color" />
+                        <p class="pBold">Number Box</p>
+                        <input type="number" min=0 max=100 step=10 />
+                        <p class="pBold">Range Selector</p>
+                        <input id="range" type="range" min="0" max="100" value="0" />
+                        
+                    </div>
+                    
+                    <p>I also learnt how to target elements depending on their type attribute. I have flipped the range selector 90 degrees by using this.</p>
+                    
+                </div>
+                
+            </article>
+            
+            <hr>
+            
+            <article id="post8">
+            
+                <aside>
+                    <div class="datePublished">
+                        <p><img src="images/calendar.png" alt="Calendar Icon"> <time datetime="2018-11-22">Nov 22, 2018</time></p>
+                    </div>
+                    <div class="referencesInPublication">
+                        <p id="ref8" class="ref" onclick="openRef8()"><img src="images/references.png" alt="Message Icon"> 3 references</p>
+                    </div>
+                    
+                    <div id="references8" class="refBox">
+                        <div class="tHead">
+                            <p>References week 8</p>
+                            <i id="close8" onclick="closeRef8()" class="far fa-window-close"></i>
+                        </div>
+                        <div class="tBody">
+                            <a href="http://www.cem.brighton.ac.uk/staff/esg1/ci435/tutorial08.html" target="_blank">Lab Tutorial Week 8</a>
+                            <a href="https://validator.w3.org/" target="_blank">W3C HTML Validator</a>
+                            <a href="http://jigsaw.w3.org/css-validator/" target="_blank">W3C CSS Validator</a>
+                        </div>
+                    </div>
+                    
+                </aside>
+                
+                
+                
+                <div class="blogPost">
+                    <h3>Week 8 - Responsive layout</h3>
+                    <p>This week i learnt about other ways to make responsive layout, namely flexbox and multi-columns.</p>
+                    <p>Example of multi-columns:</p>
+                    <div id="multi-column">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget nunc tortor. Sed suscipit enim non lacus hendrerit, id commodo libero aliquet.
+                        Vestibulum faucibus lectus at vulputate tristique. In ac mi euismod, egestas justo eu, tincidunt neque.
+                        Pellentesque dapibus purus enim, ut laoreet arcu molestie eget. Phasellus luctus congue tortor ac interdum.
+                        Morbi lacus elit, porttitor sed sodales nec, congue et nisi. Quisque facilisis euismod lectus, sed euismod mauris.
+                        Vivamus et fermentum lacus. Suspendisse at consectetur metus. Curabitur vel lorem ligula. Vivamus dictum eget ligula iaculis suscipit.
+                        Nam ut arcu non libero efficitur posuere elementum eget urna. Praesent placerat metus in est consequat ornare. Pellentesque non pharetra mi, non gravida mi.</p>
+                    </div>
+                    
+                    <p>Example of flexbox:</p>
+                    
+                    <div class="cards">
+                        
+                        <div class="card">
+                            <p><strong>Card 1</strong></p>
+                            <p>Instructions: Lorem ipsum dolor sit amet, consectetur adipiscing elit.Sed vulputate erat ipsum. Vestibulum vitae elit in est congue lobortis quis non orci.</p>
+                        </div>                 
+                        
+                        <div class="card">
+                            <p><strong>Card 2</strong></p>
+                            <p>Instructions: Lorem ipsum dolor sit amet, consectetur adipiscing elit.Sed vulputate erat ipsum. Vestibulum vitae elit in est congue lobortis quis non orci.</p>
+                        </div>
+                        
+                        <div class="card">
+                            <p><strong>Card 3</strong></p>
+                            <p>Instructions: Lorem ipsum dolor sit amet, consectetur adipiscing elit.Sed vulputate erat ipsum. Vestibulum vitae elit in est congue lobortis quis non orci.</p>
+                        </div>
+                        
+                        <div class="card">
+                            <p><strong>Card 4</strong></p>
+                            <p>Instructions: Lorem ipsum dolor sit amet, consectetur adipiscing elit.Sed vulputate erat ipsum. Vestibulum vitae elit in est congue lobortis quis non orci.</p>
+                        </div>
+                        
+                        <div class="card">
+                            <p><strong>Card 5</strong></p>
+                            <p>Instructions: Lorem ipsum dolor sit amet, consectetur adipiscing elit.Sed vulputate erat ipsum. Vestibulum vitae elit in est congue lobortis quis non orci.</p>
+                        </div>
+                        
+                        <div class="card">
+                            <p><strong>Card 6</strong></p>
+                            <p>Instructions: Lorem ipsum dolor sit amet, consectetur adipiscing elit.Sed vulputate erat ipsum. Vestibulum vitae elit in est congue lobortis quis non orci.</p>
+                        </div>
+                        
+                    </div>
+
+                    
+                </div>
+                
+            </article>
+            
+            <hr>
+            
+            <article id="post7">
+            
+                <aside>
+                    <div class="datePublished">
+                        <p><img src="images/calendar.png" alt="Calendar Icon"> <time datetime="2018-11-15">Nov 15, 2018</time></p>
+                    </div>
+                    <div class="referencesInPublication">
+                        <p id="ref7" class="ref" onclick="openRef7()"><img src="images/references.png" alt="Message Icon"> 4 references</p>
+                    </div>
+                    
+                    <div id="references7" class="refBox">
+                        <div class="tHead">
+                            <p>References week 7</p>
+                            <i id="close7" onclick="closeRef7()" class="far fa-window-close"></i>
+                        </div>
+                        <div class="tBody">
+                            <a href="http://www.cem.brighton.ac.uk/staff/esg1/ci435/tutorial07/tutorial07.html" target="_blank">Lab Tutorial Week 7</a>
+                            <a href="https://www.youtube.com/embed/TrduBSGtkS4" target="_blank">Brighton Christmas Video</a>
+                            <a href="https://validator.w3.org/" target="_blank">W3C HTML Validator</a>
+                            <a href="http://jigsaw.w3.org/css-validator/" target="_blank">W3C CSS Validator</a>
+                        </div>
+                    </div>
+                    
+                </aside>
+                
+                
+                
+                <div class="blogPost">
+                    <h3>Week 7 - Responsive Images</h3>
+                    <p>In this week i learnt how to make images responsive using the following methods:</p>
+                    <dl>
+                        <dt>Clipped image</dt>
+                        <dd>By setting overflow to hidden, the image can remain full-size, but parts of it will disappear when the browser window gets resized</dd>
+                        <dt>Flexible image</dt>
+                        <dd>By giving the image a width set using percentages, the image will resize depending on how big the browser window is. This is the method i have used for the images on my website.</dd>
+                        <dt>Flexible image with text wrapping</dt>
+                        <dd>This is the same as flexible image, but with an added float effect to make the text float around the image.</dd>
+                        <dt>Bonus: Flexible video container</dt>
+                        <dd>Flexible video container uses the iframe tag within to show a video. You style the container how you want it, and then add an ifram tag within it. It is important to keep the 16:9 ratio though, or the video will be difficult to watch.</dd>
+                    </dl>
+                    
+                    <p>Here is an example of a Flexible video container:</p>
+                    
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/TrduBSGtkS4" allowfullscreen></iframe>
+                    </div>
+                    
+                </div>
+                
+            </article>
+            
+            <hr>
+            
+            <article id="post6">
+            
+                <aside>
+                    <div class="datePublished">
+                        <p><img src="images/calendar.png" alt="Calendar Icon"> <time datetime="2018-11-08">Nov 08, 2018</time></p>
+                    </div>
+                    <div class="referencesInPublication">
+                        <p id="ref6" class="ref" onclick="openRef6()"><img src="images/references.png" alt="Message Icon"> 3 references</p>
+                    </div>
+                    
+                    <div id="references6" class="refBox">
+                        <div class="tHead">
+                            <p>References week 6</p>
+                            <i id="close6" onclick="closeRef6()" class="far fa-window-close"></i>
+                        </div>
+                        <div class="tBody">
+                            <a href="http://www.cem.brighton.ac.uk/staff/esg1/ci435/tutorial06/tutorial06.html" target="_blank">Lab Tutorial Week 6</a>
+                            <a href="https://validator.w3.org/" target="_blank">W3C HTML Validator</a>
+                            <a href="http://jigsaw.w3.org/css-validator/" target="_blank">W3C CSS Validator</a>
+                        </div>
+                    </div>
+                    
+                </aside>
+                
+                
+                
+                <div class="blogPost">
+                    <h3>Week 6 - Grid display</h3>
+                    <p>This was an interesting week, as it was about making websites responsive.</p>
+                    <p>I chose to use the grid display for my blog posts, as there are a lot of elements inside. And I also used the grid display in the contact page, although a flexbox might have been a better idea.</p>
+                    <p>I am happy with how the grid display on the blog posts turned out, but personally I do not like the layout it has between 650px and 1100px. I decided to keep it like this though, as it shows some variation in working with grid displays. If i was to change it, I would probably just remove the 650px media query, and use the layout it has now when its under 650px up until 1100px.</p>
+                    <p>I have styled the website using a mobile first approach, meaning that the website is primarily styled for low widths, but uses media queries to make a better layout for wider screens. This is done to reduce the workload on phones visiting the website. Seeing as desktops are more powerful and often has better internet connections, they can manage the extra work to load the queries.</p>
+                    <p>I have also made the images responsive!</p>
+                    
+
+                </div>
+                
+            </article>
+            
+            <hr>
+            
+            <article id="post5">
+            
+                <aside>
+                    <div class="datePublished">
+                        <p><img src="images/calendar.png" alt="Calendar Icon"> <time datetime="2018-11-01">Nov 01, 2018</time></p>
+                    </div>
+                    <div class="referencesInPublication">
+                        <p id="ref5" class="ref" onclick="openRef5()"><img src="images/references.png" alt="Message Icon"> 7 references</p>
+                    </div>
+                    
+                    <div id="references5" class="refBox">
+                        <div class="tHead">
+                            <p>References week 5</p>
+                            <i id="close5" onclick="closeRef5()" class="far fa-window-close"></i>
+                        </div>
+                        <div class="tBody">
+                            <a href="http://www.cem.brighton.ac.uk/staff/esg1/ci435/tutorial05/tutorial05.html" target="_blank">Lab Tutorial Week 5</a>
+                            <a href="https://fonts.google.com/" target="_blank">Google Fonts</a>
+                            <a href="http://wikieducator.org/Libre_License" target="_blank">WikiEducator: Libre License</a>
+                            <a href="http://www.w3.org/html/logo/" target="_blank">HTML5 Logo</a>
+                            <a href="https://commons.wikimedia.org/wiki/File:CSS3_logo_and_wordmark.svg" target="_blank">CSS3 Logo</a>
+                            <a href="https://validator.w3.org/" target="_blank">W3C HTML Validator</a>
+                            <a href="http://jigsaw.w3.org/css-validator/" target="_blank">W3C CSS Validator</a>
+                        </div>
+                    </div>
+                    
+                </aside>
+                
+                
+                
+                <div class="blogPost">
+                    <h3>Week 5 - Styling text</h3>
+                    <p>
+                        <img class="floatImage" src="images/floatImage.PNG">
+                        In this week I used CSS to style some more of my HTML elements.<br>
+                        I learnt how to make text float around images, which i have done here and in week 3, and I have also learnt how to clear floats, and I have done so on the paragraph underneat this.
+
+               
+                    </p>
+                    
+                    <p class="clearFloat">I specified the font-family to pick a font for the text. To do this, I used google fonts, which offers fonts under the Libre license. WikiEducator's description of the Libre License is as follows:</p>
+                    
+                    <blockquote>
+
+                        <p>A libre licence is a license through which the author grants users the freedom to read, listen to, watch, or otherwise experience the resource; to learn from or with it; to copy, adapt and use it for any purpose; and to share derived works for the benefit of the community.</p>
+                        <footer>
+                            <cite>
+                            <a href="http://wikieducator.org/Libre_License" target="_blank">WikiEducator: Libre License</a>
+                            </cite>
+                        </footer>
+                    </blockquote>
+                    
+                    <p>Now that I know that I am allowed to use a font from Google Fonts, and I have successfully added a font to my website, I should add a fallback font. This is so that if a user fails to load the main font for whatever reason, the website will use a more common font that is likely to be preinstalled on most computers.</p>
+                    
+                    <p class="dropcap">This is a paragraph with a dropcap. You can see from the first letter in the paragraph that it has increased in size, and also that the text is floating around it, although the latter might not be as evident.</p>
+                    
+
+                </div>
+                
+            </article>
+            
+            <hr>
+            
+            <article id="post4">
+            
+                <aside>
+                    <div class="datePublished">
+                        <p><img src="images/calendar.png" alt="Calendar Icon"> <time datetime="2018-10-25">Oct 25, 2018</time></p>
+                    </div>
+                    <div class="referencesInPublication">
+                        <p id="ref4" class="ref" onclick="openRef4()"><img src="images/references.png" alt="Message Icon"> 5 references</p>
+                    </div>
+                    
+                    <div id="references4" class="refBox">
+                        <div class="tHead">
+                            <p>References week 4</p>
+                            <i id="close4" onclick="closeRef4()" class="far fa-window-close"></i>
+                        </div>
+                        <div class="tBody">
+                            <a href="http://www.cem.brighton.ac.uk/staff/esg1/ci435/tutorial04.html" target="_blank">Lab Tutorial Week 4</a>
+                            <a href="https://necolas.github.io/normalize.css/" target="_blank">Normalize.css</a>
+                            <a href="https://color.adobe.com/create/color-wheel/" target="_blank">Colour Picker</a>
+                            <a href="https://validator.w3.org/" target="_blank">W3C HTML Validator</a>
+                            <a href="http://jigsaw.w3.org/css-validator/" target="_blank">W3C CSS Validator</a>
+                        </div>
+                    </div>
+                    
+                </aside>
+                
+                
+                
+                <div class="blogPost">
+                    <h3>Week 4 - Setting up CSS</h3>
+                    <p>This week was used to link the HTML pages with CSS</p>
+                    <p>I linked the normalize.css file to all my HTML files. The normalize.css file is used to make all browsers to render my HTML in a similar way.</p>
+                    <p>I also linked stylesheet.css to all my HTML files. stylesheet.css is my own CSS file, which I use to style my HTML elements.</p>
+                    <p>I learnt how to style basic elements this week, and also how to style pseudo classes. An example for a pseudo class is "a:hover", which will trigger when the user of the website is hovering the anchor tag.</p>
+                    <p>This week I was introduced to a new type of validating aswell. I have put a link to the CSS validator in this week's references.</p>
+                    
+
+                </div>
+                
+            </article>
+            
+            <hr>
+            
+            <article id="post3">
+            
+                <aside>
+                    <div class="datePublished">
+                        <p><img src="images/calendar.png" alt="Calendar Icon"> <time datetime="2018-10-18">Oct 18, 2018</time></p>
+                    </div>
+                    <div class="referencesInPublication">
+                        <p id="ref3" class="ref" onclick="openRef3()"><img src="images/references.png" alt="Message Icon"> 3 references</p>
+                    </div>
+                    
+                    <div id="references3" class="refBox">
+                        <div class="tHead">
+                            <p>References week 3</p>
+                            <i id="close3" onclick="closeRef3()" class="far fa-window-close"></i>
+                        </div>
+                        <div class="tBody">
+                            <a href="http://www.cem.brighton.ac.uk/staff/esg1/ci435/tutorial03/tutorial03.html" target="_blank">Lab Tutorial Week 3</a>
+                            <a href="http://www.w3.org/html/logo/" target="_blank">HTML5 Logo</a>
+                            <a href="https://validator.w3.org/" target="_blank">W3C HTML Validator</a>
+                        </div>
+                    </div>
+                    
+                </aside>
+                
+                <div class="blogPost">
+                    <h3>Week 3 - Lists and Tables</h3>
+                    <table cellspacing="0" cellpadding="0"> <!--This is a table element which contains table header, table row and table data elements.-->
+                        <caption>Timetable</caption> <!--Table Caption (title)-->
+                        <tr>
+                            <th>Day/time</th>
+                            <th>Monday</th>
+                            <th>Tuesday</th>
+                            <th>Wednesday</th>
+                            <th>Thurday</th>
+                            <th>Friday</th>
+                        </tr>
+                        <tr>
+                            <td>9-10am</td>
+                            <td>-</td>
+                            <td>Lecture</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>10-11am</td>
+                            <td>Lecture</td>
+                            <td>Lecture</td>
+                            <td>-</td>
+                            <td>Tutorial</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>11-12am</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>Lab</td>
+                            <td>Lab</td>
+                        </tr>
+                        <tr>
+                            <td>12-13pm</td>
+                            <td>Lecture</td>
+                            <td>Lab</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>Lab</td>
+                        </tr>
+                        <tr>
+                            <td>13-14pm</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>Lab</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>14-15pm</td>
+                            <td>Lecture</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>Lab</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>15-16pm</td>
+                            <td>Lecture</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                    </table>
+
+                    <p>This week focused on lists and tables. I have made a copy of my university timetable using HTML tables above, and I will post 3 different types of lists below:</p>
+                    <ol>
+                        <li>This</li>
+                        <li>Is a</li>
+                        <ul><li>Nested</li></ul>
+                        <li>Ordered</li>
+                        <li>List</li>
+                    </ol>
+                    
+                    <ul>
+                        <li>This</li>
+                        <li>Is an</li>
+                        <li>Unordered</li>
+                        <li>List</li>
+                    </ul>
+                    
+                    <dl>
+                        <dt>This is a detailed list</dt>
+                        <dd>It can be used to add a title and a description</dd>
+                        <dt>The <code>&lt;dt&gt;</code> tag makes a title</dt>
+                        <dd>And the <code>&lt;dd&gt;</code> tag makes the description</dd>
+                    </dl>
+                    
+                    <p>I also learnt how to quote text, and how to turn images into links</p>
+                    <p>
+                        <a href="http://www.w3.org/html/logo/"><img class="floatImage" src="images/html5logo.png" alt="HTML5 logo"></a>
+                        The W3C has made this HTML5 logo for people to use on their websites. The logo is licensed under Creative Commons Attribution 3.0 and is therefore free to use. I have added an effect here to showcase how to make text float around images.
+                    </p>
+                    
+                </div>
+                
+            </article>
+            
+            <hr>
+            
+            <article id="post2">
+            
+                <aside>
+                    <div class="datePublished">
+                        <p><img src="images/calendar.png" alt="Calendar Icon"> <time datetime="2018-10-11">Oct 11, 2018</time></p>
+                    </div>
+                    <div class="referencesInPublication">
+                        <p id="ref2" class="ref" onclick="openRef2()"><img src="images/references.png" alt="Message Icon"> 2 references</p>
+                    </div>
+                    
+                    <div id="references2" class="refBox">
+                        <div class="tHead">
+                            <p>References week 2</p>
+                            <i id="close2" onclick="closeRef2()" class="far fa-window-close"></i>
+                        </div>
+                        <div class="tBody">
+                            <a href="http://www.cem.brighton.ac.uk/staff/esg1/ci435/tutorial02.html" target="_blank">Lab Tutorial Week 2</a>
+                            <a href="https://validator.w3.org/" target="_blank">W3C HTML Validator</a>
+                        </div>
+                    </div>
+                    
+                </aside>
+                
+                
+                
+                <div class="blogPost">
+                    <h3>Week 2 - Marking up my website</h3>
+                    <p>This post marks my second lab tutorial. This weeks lab focused on adding more advanced tags to the HTML of the learning journal</p>
+                    <p>Specifically, these tags are:</p>
+                    <ul>
+                        <li>Lists and list items.</li>
+                        <li>Local anchor tags, as seen in the index menu and return to top button.</li>
+                        <li>Images.</li>
+                        <li>The time tag.</li>
+                        <li>The mailto: link, as can be seen in my contact page.</li>
+                    </ul>
+                    
+                    <p>I also learnt how to make a proper folder structure and the importance of having one.</p>
+                    
+                    <figure>
+                        <img src="images/folderstruct.jpg" alt="Proper folder structure">
+                        <figcaption>Proper folder structure<br />
+                        <small>Screenshot &copy; Artur Stokkeland</small>
+                        </figcaption>
+                    </figure>
+                </div>
+                
+            </article>
+            
+            <hr>
+            
+            <article id="post1">
+            
+                <aside>
+                    <div class="datePublished">
+                        <p><img src="images/calendar.png" alt="Calendar Icon"> <time datetime="2018-10-04">Oct 4, 2018</time></p>
+                    </div>
+                    <div class="referencesInPublication">
+                        <p id="ref1" class="ref" onclick="openRef1()"><img src="images/references.png" alt="Message Icon"> 3 references</p>
+                    </div>
+                    
+                    <div id="references1" class="refBox">
+                        <div class="tHead">
+                            <p>References week 1</p>
+                            <i id="close1" onclick="closeRef1()" class="far fa-window-close"></i>
+                        </div>
+                        <div class="tBody">
+                            <a href="http://www.cem.brighton.ac.uk/staff/esg1/ci435/induction/induction.html" target="_blank">Induction Lab</a>
+                            <a href="http://www.cem.brighton.ac.uk/staff/esg1/ci435/tutorial01/tutorial01.html" target="_blank">Lab Tutorial Week 1</a>
+                            <a href="https://validator.w3.org/" target="_blank">W3C HTML Validator</a>
+                        </div>
+                    </div>
+                    
+                </aside>
+                
+                
+                
+                <div class="blogPost">
+                    <h3>Week 1 - Setting up the learning journal</h3>
+                    <p>Today was the first day of lab tutorials for the web development course CI435 at the university of Brighton. I got the opportunity to have a look around the W: drive, which is where we store our webpages to be hosted.</p>
+                    <p>Among the things i learnt today are:</p>
+                    <ul>
+                        <li>How to use brackets as an editing tool to create simple websites.</li>
+                        <li>I made three HTML files and linked them together, the files being the learning journal, a tutorial page, and a contacts page.</li>
+                        <li>Some basic HTML tags, like h1, h2..., h6 and p.</li>
+                        <li>How to use the W3C HTML validator to check my HTML for errors.</li>
+                    </ul>
+                    
+                    <figure>
+                        <img src="images/validated.png" alt="W3C HTML Validator showing no errors">
+                        <figcaption>W3C Successful validation<br />
+                        <small>Screenshot &copy; Artur Stokkeland</small>
+                        </figcaption>
+                    </figure>
+
+                </div>
+                
+            </article>
+            
+            <hr>
+            
+            <footer class="footerIndex">
+            
+                <p>&copy; Anonymous Student, Anonymous Company. 2018-2019</p>
+                
+            </footer>
+    
+        </div>
+        
+        <a href="#wrapper"><div id="returnToTop">--- Return To Top ---</div></a>
+        
+        <script src="scripts/menu.js"></script>
+        <script src="scripts/script.js"></script>
+        
+    </body>
+    
+</html>

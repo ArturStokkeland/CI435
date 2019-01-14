@@ -1,0 +1,163 @@
+<!doctype html>
+
+<html lang="en">
+    
+    <head>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Tutorial</title>
+        <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    </head>
+
+    <body>
+
+        <div id="wrapper">
+            
+            <header>
+                
+                <h1>Tutorial</h1>
+                
+            </header>
+            
+            <!-- navbar -->
+            
+            <nav>
+                
+                <div id="navHolderBig">
+                
+                    <a href="index.html" class="navLink notActive">Learning Journal</a>
+                    <a class="navLink">Tutorial</a>
+                    <a href="contact.html" class="navLink notActive">Contact me</a>
+                    
+                </div>
+                
+                <div id="navHolderSmall" onclick="dropdownMenu()">
+                
+                    <button id="dropdownMenuButton">Menu <i class="fas fa-chevron-down"></i></button>
+                    <div id="dropdownMenuContent">
+                        <a href="index.html">Learning Journal</a>
+                        <p>Tutorial</p>
+                        <a href="contact.html">Contact me</a>
+                    </div>
+                
+                </div>
+                
+            </nav>
+            
+            <!-- main content -->
+            
+            <div id="tutorial">
+            
+                <h2>How to make a simple incremental game:</h2>
+
+                <h3>What is an incremental game?</h3>
+                
+                <p>Wikipedia says the following about incremental games:</p>
+                
+                <blockquote>
+
+                    <p>Incremental games (also known as idle games, clicker games, or clicking games) are video games whose gameplay consists of the player performing simple actions such as clicking on the screen repeatedly to earn currency. In some games, even the clicking becomes unnecessary after a time, as the game plays itself, including in the player's absence, hence the moniker "idle game".</p>
+
+                    <p>In an incremental game, a player performs a simple action – usually clicking a button – which in turn rewards the player with a unit of currency. The player may spend their currency to purchase items or abilities that allow the player to earn currency faster or automatically, without needing to perform the initial action. A common theme is to give the player sources of time-based income displayed as "buildings", such as factories or farms. These sources increase the currency production rate, but higher tier sources usually have an exponentially higher cost, so upgrading between tiers takes usually about the same time or even increasingly longer.
+
+                    <p>Some games feature a reset-based system where the player resets the progress of their game and gains another form of currency. This new currency is normally used to gain global bonuses which do not disappear after a reset, allowing the player to go further than the previous reset. Incremental games vary as to whether they have a victory condition: games like Cookie Clicker allow the players to play indefinitely, while games like Candy Box! or Universal Paperclips feature endings that can be reached after a certain amount of progress is made within the games.</p>
+                    <footer>
+                        <cite>
+                        <a href="https://en.wikipedia.org/wiki/Incremental_game">Wikipedia: Incremental Game</a>
+                        </cite>
+                    </footer>
+                </blockquote>
+                
+                <h3>Step 1 - Create a text element</h3>
+                
+                <p>The first thing you need to do is create a text element. This text element will keep track of the resource used in the game. In this example we will be using gold as the resource.</p>
+                
+                <code><span class="codeBlue">&lt;p&gt;&lt;span</span> <span class="codeGreen">id=</span><span class="codeOrange">"gold"</span><span class="codeBlue">&gt;</span>0<span class="codeBlue">&lt;/span&gt;</span> gold<span class="codeBlue">&lt;/p&gt;</span></code>
+                
+                <p>In the example above, we use a span element around the amount of gold with an ID of gold. This is so that later when we create our javascript, we can target the number to change the amount.</p>
+                
+                <h3>Step 2 - Create a button to genereate gold</h3>
+                
+                <p>The next thing we need to do is create a button</p>
+                
+                <code><span class="codeBlue">&lt;button</span> <span class="codeGreen">onclick=</span><span class="codeOrange">"mineGold()"</span><span class="codeBlue">&gt;</span>Mine Gold<span class="codeBlue">&lt;/button&gt;</span></code>
+                
+                <p>Notice that we have added an attribute to the button called "onclick". This attribute is used to call functions in javascript when the button is clicked.</p>
+                
+                <h3>Step 3 - Connect JavaScript to HTML</h3>
+                
+                <p>Before we can start coding the logic for our game, we need to import a javascript file to the HTML</p>
+                
+                <code><span class="codeBlue">&lt;script</span> <span class="codeGreen">src=</span><span class="codeOrange">"scripts/game.js"</span><span class="codeBlue">&gt;&lt;/script&gt;</span></code>
+                
+                <p>The "src" attribute tells the HTML where the JavaScript file is stored. Once we have imported the script, we are now ready to write the logic for the game</p>
+                
+                <h3>Step 4 - Write JavaScript</h3>
+                
+                <p>In the JavaScript file we have made, which in our example is game.js, we now write the following code:</p>
+                
+                <code>
+                    <span class="codeBlue">var</span> <span class="codePurple">gold</span> = 0;<br>
+                    <br>
+                    <span class="codeBlue">function</span> <span class="codePurple">mineGold</span>() &#123; <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;gold++;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;document.<span class="codePurple">getElementById</span>&#40;<span class="codeOrange">"gold"</span>&#41;.<span class="codePurple">innerHTML</span> = gold;<br>
+                    &#125;
+                </code>
+                
+                <p>We can see here how the value of the "onclick" attribute corresponds to the function name, and how the "ID" of the span is fetched in the "getElementByID" command.</p>
+                
+                <p>Here is some explanation as to what the syntax does:</p>
+                
+                <code><span class="codeBlue">var</span> <span class="codePurple">gold</span> = 0;</code>
+                <p>This line creates a variable named gold and assigns it the value of 0. This means that the player starts with 0 gold.</p>
+                
+                <code><span class="codeBlue">function</span> <span class="codePurple">mineGold</span>() &#123; <br></code>
+                <p>This creates a function called "mineGold()", seeing as it has the same name as the value of the onclick attribute in our button, this function will be run by clicking the button.</p>
+                
+                <code>gold++;</code>
+                <p>This line simply increments the value in the gold variable by one.</p>
+                
+                <code>document.<span class="codePurple">getElementById</span>&#40;<span class="codeOrange">"gold"</span>&#41;.<span class="codePurple">innerHTML</span> = gold;</code>
+                <p>This line first targets the document, which means the document you write your HTML in, and then proceeds to find an elements which has the ID of "gold". Once it has found the correct element, it changes the HTML inside of this element to the value we have set, which in our case is the value of the variable gold.</p>
+                
+                <h3>Step 5 (Optional) - Style your elements</h3>
+                
+                <p>If you so desire, you could style your HTML elements to make your game look a bit prettier. I will not teach you how to do this, but an example of this can be seen in the exmaple game i have included. Simply right-click and click "view page source" to see what i have done.</p>
+                
+                <h3>Congratulations, you have made a basic incremental game</h3>
+                
+                <p>If you have followed the steps correctly, you should have something that resembles the game i have made below. Good job!</p>
+                
+                <p>Not very much of a game though to be honest, but hey... it is a start!</p>
+                
+                <hr>
+                
+                <h3>Example Game:</h3>
+                
+                <p><span id="gold">0</span> gold</p>
+                <button onclick="mineGold()">Mine Gold</button>
+                
+            </div>
+            
+            <hr>
+            
+            <footer>
+            
+                <p>&copy; Anonymous Student, Anonymous Company. 2018-2019</p>
+                
+            </footer>
+            
+        </div>
+        
+        <script src="scripts/menu.js"></script>
+        <script src="scripts/game.js"></script>
+        
+    </body>
+    
+</html>
