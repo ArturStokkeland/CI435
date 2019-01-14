@@ -417,6 +417,7 @@ dt {
 
 table {
     border: none;
+    display: none;
 }
 
 table caption {
@@ -620,6 +621,14 @@ label {
 }
 
 /* ----- Index page ----- */
+
+@media (min-width: 550px) {
+    
+    table {
+        display: block;
+    }
+    
+}
 
 @media (min-width: 650px) {
  
