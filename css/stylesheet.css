@@ -213,6 +213,7 @@ aside img {
 }
 
 .blogPost img {
+    width: 100%;
 }
 
 .blogPost h3 {
@@ -594,7 +595,7 @@ label {
 
 
 /* ------------------------- */
-/* ----- Media Queries ----- /*
+/* ----- Media Queries ----- */
 /* ------------------------- */
 
 /* ----- navbar ----- */
