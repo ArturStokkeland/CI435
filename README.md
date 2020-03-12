@@ -1,1 +1,1 @@
-https://g9us.github.io/CI435/
+https://arturstokkeland.github.io/CI435/
